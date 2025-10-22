@@ -1,1 +1,75 @@
 Primeira aula de git
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Games Compra.com</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="pagina">
+    <h2 class="titulo">Games Compra.com</h2>
+    <form action="mostrando.php" method="post" class="formulario">
+        <h3 class="subtitulo">DADOS DO CLIENTE</h3>
+        
+        <label>CPF:</label>
+        <input type="text" name="cpf" class="campo" required><br><br>
+
+        <label>Nome:</label>
+        <input type="text" name="nome" class="campo" required><br><br>
+
+        <label>Endereço:</label>
+        <input type="text" name="ender" class="campo" required><br><br>
+
+        <label>CEP:</label>
+        <input type="text" name="cep" class="campo" required><br><br>
+
+        <label>Cidade:</label>
+        <input type="text" name="cidade" class="campo" required><br><br>
+
+        <label>Estado:</label>
+        <select name="uf" class="campo">
+            <option value="SP" selected>SP</option>
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+            <option value="RS">RS</option>
+        </select><br><br>
+
+        <label>Sexo:</label><br>
+        <input type="radio" name="sexo" value="Masculino" class="radio" required> Masculino<br>
+        <input type="radio" name="sexo" value="Feminino" class="radio"> Feminino<br><br>
+
+        <label>Deseja receber emails sobre produtos e lançamentos:</label>
+        <input type="checkbox" name="receber1" value="Sim" class="checkbox"><br>
+
+        <label>Deseja receber notificação:</label>
+        <input type="checkbox" name="receber2" value="Sim" class="checkbox"><br><br>
+
+        <label>Game Preferido:</label>
+        <select name="game" class="campo">
+            <option value=""></option>
+            <option value="God of war">God of war</option>
+            <option value="GTA">GTA</option>
+            <option value="Tomb Raider">Tomb Raider</option>
+            <option value="Mario Bross">Mario Bross</option>
+            <option value="Crash">Crash</option>
+            <option value="Não possuo">Não possuo</option>
+        </select><br><br>
+
+        <h3 class="subtitulo">DADOS DO PEDIDO</h3>
+
+        <label>Produto:</label>
+        <input type="text" name="produto" class="campo" required><br><br>
+
+        <label>Preço:</label>
+        <input type="number" name="preco" step="0.01" class="campo" required><br><br>
+
+        <label>Quantidade:</label>
+        <input type="number" name="qtde" class="campo" required><br><br>
+
+        <h3 class="subtitulo">Confirma Preenchimento?</h3>
+        <input type="submit" value="Enviar formulário" class="botao">
+        <input type="reset" value="Apagar tudo" class="botao">
+    </form>
+</body>
+</html>
